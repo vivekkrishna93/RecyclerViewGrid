@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<AndroidVersion> android_version = new ArrayList<>();
 
 
-        for (int i = 0; i <10; i++)
+        for (int i = 1; i <10; i++)
         {
             {
                 AndroidVersion androidVersion = new AndroidVersion();
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 android_version.add(androidVersion);
 
 
-            for(int j=0;j<10;j++) {
+            for(int j=1;j<10;j++) {
                 AndroidVersion androidVersion2 = new AndroidVersion();
                 androidVersion2.setAndroid_image_url(android_image_urls[j]);
                 android_version.add(androidVersion2);
