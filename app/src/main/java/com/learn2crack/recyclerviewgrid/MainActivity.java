@@ -59,30 +59,18 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<AndroidVersion> android_version = new ArrayList<>();
 
 
-        for (int i = 1; i <10; i++)
-        {
-            {
-                AndroidVersion androidVersion = new AndroidVersion();
-                androidVersion.setAndroid_version_name(android_version_names[i]);
-                android_version.add(androidVersion);
+        for (int k = 0; k < 1000; k++) {
+            for (int i = 0; i < 10; i++) {
 
-
-            for(int j=1;j<10;j++) {
                 AndroidVersion androidVersion2 = new AndroidVersion();
-                androidVersion2.setAndroid_image_url(android_image_urls[j]);
+                androidVersion2.setAndroid_image_url(android_image_urls[i]);
+                androidVersion2.setAndroid_version_name(android_version_names[i]);
                 android_version.add(androidVersion2);
 
-            }
 
             }
-
-
-
-
 
         }
-
-
         return android_version;
 
     }
